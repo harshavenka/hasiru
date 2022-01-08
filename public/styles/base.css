@@ -21,7 +21,7 @@ html{
   --color-primary-500: rgb(212, 136, 14);
   --color-primary-700: rgb(212, 120, 14);
   --color-primary-200-contrast: rgb(100, 46, 2);
-  --color-primary-500-contrast: white;
+  --color-primary-500-contrast: rgb(3, 2, 2);
 
   --color-error-100: rgb(247, 135, 113);
   --color-error-500: rgb(199, 51, 15);
@@ -52,5 +52,34 @@ main
     width: 90%;
     max-width: 50rem;
     margin: auto;
+}
+
+ul,ol
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+a
+{
+    text-decoration: none;
+    color: rgba(75, 241, 60, 0.788);
+}
+
+.btn
+{
+    cursor: pointer;
+    font: inherit;
+    padding: var(--space-2) var(--space-6);
+    color: var(--color-primary-500-contrast);
+    border: 1px solid var(--color-primary-500);
+    border-radius: var(--border-radius-small);
+}
+.btn:hover,.btn:active
+{
+   background-color: var(--color-primary-700);
+   border-color: var(--color-primary-200);
 }
 

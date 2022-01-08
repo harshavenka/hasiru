@@ -1,0 +1,30 @@
+<%- include('../../shared/includes/head',{pagetitle:'signup'}) %> 
+<link rel="stylesheet" href="/styles/forms.css">
+<link rel="stylesheet" href="/styles/auth.css">
+</head>
+
+<body>
+    <%- include('../includes/header') %> 
+    <main>
+        <h1>login</h1>
+        <form action="/signup" method="post">
+            <input type="hidden" name="_csrf" value="<%= locals.csrftoken  %> ">
+
+        <p>
+          <label for="email">e-mail</label>
+          <input type="email" name="email" id="email" required>
+        <!-- name- to access in database and required is to say it is required to post -->
+       </p>
+
+        <p>
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" minlength="5" required>
+        </p>
+        
+        <button class="btn">login</button>
+        <p id="switch-form"><a href="/signup">signup instead</a></p>
+        </form>
+    </main>
+    
+
+<%- include('../../shared/includes/footer') %> 
