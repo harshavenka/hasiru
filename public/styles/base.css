@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+
+}
+
+html{
+    font-family: 'Roboto Condensed', 'sans-serif'; 
+
+  --color-blue-50: rgb(122, 241, 243);
+  --color-blue-100: rgb(70, 235, 238);
+  --color-blue-300: rgb(54, 181, 184);
+  --color-blue-400: rgb(39, 148, 150);
+  --color-blue-500: rgb(34, 90, 128);
+  --color-blue-600: rgb(17, 70, 105);
+  --color-blue-700: rgb(6, 42, 66);
+
+  --color-primary-50: rgb(253, 224, 200);
+  --color-primary-100: rgb(253, 214, 183);
+  --color-primary-200: rgb(250, 191, 143);
+  --color-primary-400: rgb(223, 159, 41);
+  --color-primary-500: rgb(212, 136, 14);
+  --color-primary-700: rgb(212, 120, 14);
+  --color-primary-200-contrast: rgb(100, 46, 2);
+  --color-primary-500-contrast: white;
+
+  --color-error-100: rgb(247, 135, 113);
+  --color-error-500: rgb(199, 51, 15);
+
+  --color-primary-500-bg: rgb(63, 60, 58);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  --border-radius-small: 4px;
+  --border-radius-medium: 6px;
+
+  --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+body
+{
+    background-color: var(--color-blue-500);
+    color: var(--color-blue-100);
+    margin:0;
+}
+
+main
+{
+    width: 90%;
+    max-width: 50rem;
+    margin: auto;
+}
+
