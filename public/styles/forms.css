@@ -1,23 +1,41 @@
-form hr
+form hr {
+  border-color: var(--color-primary-200);
+  margin: var(--space-4);
+  
+}
+form
 {
-    border-color: var(--color-blue-50);
-    margin: var(--space-4);
-
+  border: black 2px;
+  box-shadow: 10px 10px 8px  black ;
 }
 
-label
-{
-    color: var(--color-blue-100);
-    display: block;
-    margin-bottom: var(--space-2);
+label {
+  color: var(--color-gray-100);
+  display: block;
+  margin-bottom: var(--space-2);
 }
 
-input,textarea
-{
-    font:inherit;
-    padding: var(--space-2);
-    border-radius: var(--border-radius-small);
-    border: none;
-    width: 90%;
-    
+input, textarea {
+  font: inherit;
+  padding: var(--space-2);
+  border-radius: var(--border-radius-small);
+  border: none;
+  width: 90%;
+}
+
+#image-upload-control {
+  display: flex;
+  align-items: center;
+}
+
+#image-upload-control input {
+  max-width: 15rem;
+}
+
+#image-upload-control img {
+  display: none;
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: var(--border-radius-small);
 }

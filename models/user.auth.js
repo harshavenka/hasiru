@@ -1,4 +1,7 @@
 const mongoose = require('mongoose');
+const  Db  = require('mongoose/node_modules/mongodb');
+
+
 
 const userschema = new mongoose.Schema({
     email:{
@@ -22,4 +25,14 @@ const userschema = new mongoose.Schema({
 
 const user = new mongoose.model("userDetails",userschema);
 
-module.exports = user;
+async function getUserwithSameEmail(){
+ return Db.getDb().collection('userDetails').findOne({email:this.email});
+    
+};
+
+
+module.exports = {
+    users:user,
+    getUserwithSameEmail:getUserwithSameEmail
+    
+};

@@ -1,5 +1,7 @@
 function addcsrf(req,res,next){
-    res.locals.csrftoken = req.csrftoken();
+    var token = req.csrfToken();
+    res.cookie('XSRF-TOKEN', token);
+    res.locals.csrfToken = token;
     next();
 }
 
