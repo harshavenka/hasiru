@@ -17,7 +17,7 @@ const userschema = new mongoose.Schema({
         required:true
     },
     address:[{
-        street:String,
+        area:String,
         pincode:{type:String,required:true},
         city:{type:String,required:true}
     }]

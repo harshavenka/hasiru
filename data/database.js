@@ -9,6 +9,7 @@ async function connectToDatabase() {
   database = client.db('online-shop');
   console.log("conected succesfully");
 }
+//client has internal info
 
 function getDb() {
   if (!database) {

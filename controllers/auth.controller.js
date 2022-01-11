@@ -12,7 +12,7 @@ function getSignup(req, res) {
       confirmEmail: '',
       password: '',
       fullname: '',
-      street: '',
+      area: '',
       postal: '',
       city: '',
     };
@@ -27,7 +27,7 @@ async function signup(req, res, next) {
     confirmEmail: req.body['confirm-email'],
     password: req.body.password,
     fullname: req.body.fullname,
-    street: req.body.street,
+    area: req.body.area,
     postal: req.body.postal,
     city: req.body.city,
   };
@@ -37,7 +37,7 @@ async function signup(req, res, next) {
       req.body.email,
       req.body.password,
       req.body.fullname,
-      req.body.street,
+      req.body.area,
       req.body.postal,
       req.body.city
     ) ||
@@ -61,7 +61,7 @@ async function signup(req, res, next) {
     req.body.email,
     req.body.password,
     req.body.fullname,
-    req.body.street,
+    req.body.area,
     req.body.postal,
     req.body.city
   );

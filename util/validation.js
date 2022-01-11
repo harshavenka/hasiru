@@ -8,11 +8,11 @@ function userCredentialsAreValid(email, password) {
   );
 }
 
-function userDetailsAreValid(email, password, name, street, postal, city) {
+function userDetailsAreValid(email, password, name, area, postal, city) {
   return (
     userCredentialsAreValid(email, password) &&
     !isEmpty(name) &&
-    !isEmpty(street) &&
+    !isEmpty(area) &&
     !isEmpty(postal) &&
     !isEmpty(city)
   );
