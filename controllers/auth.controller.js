@@ -13,7 +13,7 @@ function getSignup(req, res) {
       password: '',
       fullname: '',
       area: '',
-      postal: '',
+      pin: '',
       city: '',
     };
   }
@@ -28,7 +28,7 @@ async function signup(req, res, next) {
     password: req.body.password,
     fullname: req.body.fullname,
     area: req.body.area,
-    postal: req.body.postal,
+    pin: req.body.pin,
     city: req.body.city,
   };
 
@@ -38,7 +38,7 @@ async function signup(req, res, next) {
       req.body.password,
       req.body.fullname,
       req.body.area,
-      req.body.postal,
+      req.body.pin,
       req.body.city
     ) ||
     !validation.emailIsConfirmed(req.body.email, req.body['confirm-email'])
@@ -47,7 +47,7 @@ async function signup(req, res, next) {
       req,
       {
         errorMessage:
-          'Please check your input. Password must be at least 6 character slong, postal code must be 5 characters long.',
+          'Please check your input. Password must be at least 6 character slong, pin code must be 5 characters long.',
         ...enteredData,
       },
       function () {
@@ -62,7 +62,7 @@ async function signup(req, res, next) {
     req.body.password,
     req.body.fullname,
     req.body.area,
-    req.body.postal,
+    req.body.pin,
     req.body.city
   );
 
