@@ -6,7 +6,7 @@
   margin: var(--space-4) 0;
 }
 
-.order-summary {
+.order-type {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -15,8 +15,8 @@
   margin-bottom: var(--space-2);
 }
 
-.order-summary h2,
-.order-summary p {
+.order-type h2,
+.order-type p {
   font-size: 1.25rem;
   font-weight: normal;
   margin: 0;
@@ -51,7 +51,7 @@
 }
 
 @media (min-width: 48rem) {
-  .order-summary {
+  .order-type {
     flex-direction: row;
   }
 }

@@ -5,7 +5,7 @@ const db = require('../data/database');
 class Product {
   constructor(productData) {
     this.title = productData.title;
-    this.summary = productData.summary;
+    this.type = productData.type;
     this.price = +productData.price;
     this.description = productData.description;
     this.image = productData.image; // the name of the image file
@@ -69,7 +69,7 @@ class Product {
   async save() {
     const productData = {
       title: this.title,
-      summary: this.summary,
+      type: this.type,
       price: this.price,
       description: this.description,
       image: this.image,
