@@ -1,7 +1,7 @@
 const path = require('path');
 
 const express = require('express');
-const csrf = require('csurf');
+const csrf = require('csurf');//protection from csrf attacks
 const expressSession = require('express-session');
 
 const createSessionConfig = require('./config/session');
@@ -27,7 +27,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static('public'));
 app.use('/products/assets', express.static('product-data'));
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false }));//to get data
 app.use(express.json());
 
 const sessionConfig = createSessionConfig();

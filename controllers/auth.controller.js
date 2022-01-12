@@ -74,7 +74,7 @@ async function signup(req, res, next) {
         req,
         {
           errorMessage: 'User exists already! Try logging in instead!',
-          ...enteredData,
+          ...enteredData,//spreading data
         },
         function () {
           res.redirect('/signup');

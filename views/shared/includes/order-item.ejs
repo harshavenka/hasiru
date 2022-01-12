@@ -13,7 +13,7 @@
     <% } %>
     <ul>
       <% for (const item of order.productData.items) { %>
-        <li><%= item.product.title %> - $<%= item.totalPrice.toFixed(2) %> ($<%= item.product.price.toFixed(2) %> x <%= item.quantity %>)</li>
+        <li><%= item.product.title %> - Rs.<%= item.totalPrice.toFixed(2) %> ($<%= item.product.price.toFixed(2) %> x <%= item.quantity %>)</li>
       <% } %>
     </ul>
   </section>
