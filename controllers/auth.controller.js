@@ -22,7 +22,8 @@ function getSignup(req, res) {
 }
 
 async function signup(req, res, next) {
-  const enteredData = {
+  
+  const enteredData = {//this is to flash to session
     email: req.body.email,
     confirmEmail: req.body['confirm-email'],
     password: req.body.password,
@@ -110,6 +111,7 @@ async function login(req, res, next) {
   let existingUser;
   try {
     existingUser = await user.getUserWithSameEmail();
+    
   } catch (error) {
     next(error);
     return;
@@ -130,8 +132,7 @@ async function login(req, res, next) {
   }
 
   const passwordIsCorrect = await user.hasMatchingPassword(
-    existingUser.password
-  );
+    existingUser.password);
 
   if (!passwordIsCorrect) {
     sessionFlash.flashDataToSession(req, sessionErrorData, function () {

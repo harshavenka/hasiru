@@ -54,7 +54,9 @@ app.use(errorHandlerMiddleware);
 
 db.connectToDatabase()
   .then(function () {
+    console.log('connected succesfully!!');
     app.listen(3000);
+    
   })
   .catch(function (error) {
     console.log('Failed to connect to the database!');

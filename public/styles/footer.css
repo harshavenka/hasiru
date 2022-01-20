@@ -1,0 +1,142 @@
+
+
+/* body{
+    width: 100%;
+    background-color: black;
+    position: relative;
+    color: black;
+} */
+footer a
+{
+    text-decoration: none;
+    transition:.5s;
+    color: rgb(176, 226, 37);
+}
+
+/* ul li
+{
+    list-style-type: none;
+} */
+footer{
+    margin: 0;
+    padding: 0;
+    position: inherit;
+    height: 25rem;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
+    margin-bottom: 0rem;
+    background-color:rgb(17, 17, 17) ;
+}
+
+.footer_info
+{
+   
+    color: green;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 25px 0;
+}
+
+.footer_info .footer_width
+{
+    padding: 0 15px;
+}
+.footer_info
+{
+    margin-bottom: 20px;
+}
+.footer_info h2{
+    color: grey;
+}
+.about,.contact{
+    width: 40%;
+}
+.link{
+    width: 20%;
+}
+.social_media
+{
+    margin-top: 30px;
+}
+.social_media ul{
+    display: flex;
+}
+
+.social_media ul li a 
+{
+    display: inline-block;
+    margin-right: 50px;
+    width: 30px;
+    height: 30px;
+    padding-top: 7px;
+    background-color: transparent;
+    border: 0.2px solid rgb(176, 226, 37);
+    text-align: center;
+}
+
+.footer_info .social_media ul li a:hover
+{
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 170, 9);
+    
+}
+
+.link ul li a
+{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.footer_info .link ul li a:hover{
+    color: rgb(0, 170, 9);
+}
+
+.contact ul li
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.contact ul li  span
+{
+    margin-right: 15px;
+}
+
+.copy-right
+{
+    padding:15px 0;
+    text-align: center;
+    background-color: rgba(46, 43, 43, 0.637);
+    color: green;
+}   
+@media screen and (max-width: 48rem) {
+    .about,.contact{
+        
+        width: 35%;
+    }
+    .link{
+        
+        width: 30%;
+    }
+    
+}
+
+@media screen and (max-width:767px) {
+    .about,.contact,.link
+    {
+        width: 100%;
+        margin-bottom: 30px ;
+    }
+    .footer_info{
+        flex-direction: column;
+    }
+    
+    
+}
+
+
+
+

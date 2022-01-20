@@ -1,5 +1,6 @@
 <%- include('../../shared/includes/head', { pageTitle: 'All Products' }) %>
 <link rel="stylesheet" href="/styles/products.css">
+<link rel="stylesheet" href="/styles/footer.css">
 </head>
 <body>
   <%- include('../../shared/includes/header') %>
@@ -13,4 +14,63 @@
       <% } %>
     </ul>
   </main>
-<%- include('../../shared/includes/footer') %>
+  <footer> 
+        
+    <div class = "footer_info">
+        <div class="footer_width about">
+            <h2>About</h2>
+            <p>
+                Why search for plants u require.....
+                here we give u the best option of those plants who need u...
+                this is who are we..hasiru!!!!!
+            </p>
+            <div class="social_media">
+                <ul>
+                    <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_width link">
+            <h2>Quick Link</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a</li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer_width contact">
+            <h2>Contact</h2>
+            <ul>
+                <li>
+                    <span><ion-icon name="navigate"></ion-icon></span>
+                    <p>
+                        A101 nie mens hostel,ashokapuram,mysore-570008
+                    </p>
+                </li>
+
+                <li>
+                    <span><ion-icon name="mail"></ion-icon></span>
+                    <a href="#">4ni19cs049_b@mie.ac.in</a>
+                </li>    
+
+                <li>
+                    <span><ion-icon name="call"></ion-icon></span>
+                    <a href="#">+91 7829952512</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="copy-right">
+        <p>© COPYRIGHT 2022  Harsha_Venka  ALL RIGHTS RESERVED.</p>
+    </div>
+
+</footer>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</body>
+</html>
