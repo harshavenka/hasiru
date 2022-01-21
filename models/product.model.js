@@ -35,7 +35,7 @@ class Product {
       throw error;
     }
 
-    return new Product(product);
+    return new Product(product);//this is coz if we directly return product it wont have id feild hence create a instance using new!
   }
 
   static async findAll() {
@@ -81,7 +81,7 @@ class Product {
       const productId = new mongodb.ObjectId(this.id);
 
       if (!this.image) {
-        delete productData.image;
+        delete productData.image;//while updateing if no image was choosen then delete void data
       }
 
       await db.getDb().collection('products').updateOne(
