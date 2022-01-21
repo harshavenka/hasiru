@@ -13,7 +13,7 @@
         <button class="btn" data-productid="<%= product.id %>" data-csrf="<%= locals.csrfToken %>">Add to Cart</button>
       </div>
     </header>
-    
+    <h3 id="product-uses"><%= product.uses %></h3>
     <p id="product-description"><%= product.description %></p>
   </main>
 <%- include('../../shared/includes/footer') %>

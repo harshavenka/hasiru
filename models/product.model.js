@@ -6,6 +6,7 @@ class Product {
   constructor(productData) {
     this.title = productData.title;
     this.type = productData.type;
+    this.uses = productData.uses;
     this.price = +productData.price;
     this.description = productData.description;
     this.image = productData.image; // the name of the image file
@@ -70,6 +71,7 @@ class Product {
     const productData = {
       title: this.title,
       type: this.type,
+      uses:this.uses,
       price: this.price,
       description: this.description,
       image: this.image,

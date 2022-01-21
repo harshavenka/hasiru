@@ -58,6 +58,12 @@
   padding: var(--space-8);
   white-space: pre-wrap;
 }
+#product-uses {
+  background-color: var(--color-primary-500-contrast);
+  color: var(--color-gray-600);
+  padding: var(--space-4);
+  white-space: pre-wrap;
+}
 
 @media (min-width: 48rem) {
   #product-details header {
