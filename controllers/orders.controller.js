@@ -1,4 +1,4 @@
-const stripe  = require('stripe')('sk_test_51KKLlJSF9I9aZqEnXCRgH6grUycJEIbgXbRrp6jARoA5HO0KL1dI8DwoSM5Ta6QWC6nH9D3rBZuIVG8glD4qLjWQ00yzOY1IaQ');
+const stripe  = require('stripe');
 const Order = require('../models/order.model');
 const User = require('../models/user.model');
 
