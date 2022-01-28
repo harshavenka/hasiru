@@ -42,6 +42,7 @@ function updateCartItem(req, res) {
       updatedItemPrice: updatedItemData.updatedItemPrice,
     },
   });
+
 }
 
 module.exports = {

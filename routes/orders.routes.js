@@ -8,4 +8,9 @@ router.post('/', ordersController.addOrder); // /orders
 
 router.get('/', ordersController.getOrders); // /orders
 
+router.get('/success',ordersController.getsuccess);
+
+router.get('/failed',ordersController.getfailed);
+
+
 module.exports = router;
