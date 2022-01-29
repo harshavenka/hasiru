@@ -62,6 +62,16 @@ a {
   text-decoration: none;
   color: var(--color-primary-400);
 }
+/* .background-image{
+  margin: 0;
+  padding: 0;
+  background-image: url('https://th.bing.com/th/id/R.517ee66a445121b4423047917b3fd8a1?rik=MebS9J9cCDqEyw&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f01%2f244004-nature-fall-landscape-trees.jpg&ehk=dfmGUz973Vt4%2bhLiDwjkLBuRMS6NwE9vNnqJWdJApFo%3d&risl=&pid=ImgRaw&r=0');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  
+
+} */
 
 .btn {
   margin: 0 6px;
