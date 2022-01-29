@@ -13,6 +13,11 @@
         </li>
       <% } %>
     </ul>
+    <% if (locals.isAuth) { %> 
+    <p id="suggestion">Looking for something else? Request another plant <a class="btn" href="mailto:admin@gmail.com?subject=requesting new plant">Here</a></p>
+    <% } else { %> 
+        <p id="suggestion">Looking for something else? Login to request another plant <a class="btn" href="/login">Login</a></p>
+        <% } %> 
   </main>
   <footer> 
         

@@ -19,6 +19,7 @@ const baseRoutes = require('./routes/base.routes');
 const adminRoutes = require('./routes/admin.routes');
 const cartRoutes = require('./routes/cart.routes');
 const ordersRoutes = require('./routes/orders.routes');
+const favicon = require('express-favicon');//favicon
 
 const app = express();
 
@@ -26,9 +27,11 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static('public'));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use('/products/assets', express.static('product-data'));
 app.use(express.urlencoded({ extended: false }));//to get data
 app.use(express.json());
+
 
 const sessionConfig = createSessionConfig();
 
@@ -53,8 +56,9 @@ app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
 
 db.connectToDatabase()
-  .then(function () {
+  .then(function (req,res) {
     console.log('connected succesfully!!');
+   
     app.listen(3000);
     
   })

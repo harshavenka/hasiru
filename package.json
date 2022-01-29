@@ -68,6 +68,7 @@
     "escape-string-regexp": "^1.0.5",
     "etag": "^1.8.1",
     "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
     "express-session": "^1.17.2",
     "filelist": "^1.0.2",
     "fill-range": "^7.0.1",
