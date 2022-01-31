@@ -57,7 +57,7 @@ app.use(errorHandlerMiddleware);
 
 db.connectToDatabase()
   .then(function (req,res) {
-    console.log('connected succesfully!!');
+    console.log('connected succesfully!! at http://localhost:3000');
    
     app.listen(3000);
     

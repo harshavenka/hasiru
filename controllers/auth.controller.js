@@ -125,11 +125,24 @@ async function login(req, res, next) {
   };
 
   if (!existingUser) {
-    sessionFlash.flashDataToSession(req, sessionErrorData, function () {
-      res.redirect('/login');
-    });
+    // sessionFlash.flashDataToSession(req, sessionErrorData, function () {
+    //   res.redirect('/login');
+    // });
+    // return;
+    sessionFlash.flashDataToSession(
+      req,
+      {
+        errorMessage: 'Could not find the account if u dont have an account create one!',
+        sessionErrorData,
+      },
+     
+      function () {
+        res.redirect('/login');
+      }
+    );
     return;
   }
+  
 
   const passwordIsCorrect = await user.hasMatchingPassword(
     existingUser.password);
