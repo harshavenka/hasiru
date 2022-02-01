@@ -48,7 +48,7 @@ async function signup(req, res, next) {
       req,
       {
         errorMessage:
-          'Please check your input. Password must be at least 6 character slong, pin code must be 5 characters long.',
+          'please check emails Password must be at least 6 characters long, pin code must be 5 characters long, and Fullname should not be a number',
         ...enteredData,
       },
       function () {
